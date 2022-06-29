@@ -1,9 +1,9 @@
 const baseUrl = 'https://harry-potter-api-english-production.up.railway.app'
 
-function getCharactersList() {
+function getCharacters() {
   return fetch(`${baseUrl}/characters`)
 }
 
 export {
-  getCharactersList
+  getCharacters
 }

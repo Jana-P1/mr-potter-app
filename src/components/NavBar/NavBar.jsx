@@ -9,6 +9,9 @@
 
     return ( 
       <header className="NavBar">
+        <div>
+          <h1>Harry Potter App</h1>
+        </div>
         {navLinks.map((navLink, idx) => 
           <a 
             key={idx} 

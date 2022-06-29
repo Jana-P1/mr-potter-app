@@ -12,6 +12,9 @@ function App() {
   return (
     <>
       <NavBar navLinks={navLinks} />
+      <Routes>
+
+      </Routes>
     </>
   );
 }
