@@ -1,22 +1,21 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { getCharacters } from "../../services/api-calls";
-import CharacterCard from "../../components/CharacterCard/CharacterCard";
+import Character from "../../components/Character/Character";
 
 const CharactersList = () => {
   const [characters, setCharacters] = useState([])
-
+  
   useEffect(() => {
     getCharacters()
     .then(characterData => setCharacters(characterData))
   }, [])
+  
   return ( 
     <>
-      <h2>Characters of Harry Potter</h2>
-      <div className="character-container">
-
-
-      </div>
+      <h2>Harry Potter Characters</h2>
+      
+    
     </>
    );
 }

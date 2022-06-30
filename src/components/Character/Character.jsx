@@ -1,4 +1,4 @@
-const CharacterCard = () => {
+const Character = ({ character }) => {
 
   return ( 
     <div className="character">
@@ -7,5 +7,5 @@ const CharacterCard = () => {
    );
 }
  
-export default CharacterCard;
+export default Character;
 
