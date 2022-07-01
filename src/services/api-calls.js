@@ -4,7 +4,11 @@ function getCharacters() {
   return fetch(`${baseUrl}/characters`)
   .then(res => res.json())
 }
-
+function getCharacterDetails(apiUrl) {
+  return fetch(`${apiUrl}`)
+  .then(res => res.json())
+}
 export {
-  getCharacters
+  getCharacters,
+  getCharacterDetails
 }

@@ -13,18 +13,26 @@ const CharactersList = () => {
   
   return ( 
     <>
-      <h2>Harry Potter Characters</h2>
+    <h2>Harry Potter Characters</h2>
+      
       <div>
-        {characters.map(character => 
-          <div key={character.id}>
-            {character.character}
-            <img src={character.image} alt="" />
-          </div>
+        {characters.map((character) =>
+          <div>
+            <Link 
+              key={character.id} 
+              to="/characters" 
+              state={{ character }}
+            >
+              <div id="characterDiv">
+              {character.character}
+              <img src={character.image}  alt=""/>
+              </div>
+            </Link>
+          </div> 
         )}
       </div>
-    
     </>
    );
 }
- 
+
 export default CharactersList ;
