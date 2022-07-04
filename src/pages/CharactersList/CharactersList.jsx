@@ -17,18 +17,7 @@ const CharactersList = () => {
       
       <div>
         {characters.map((character) =>
-          <div>
-            <Link 
-              key={character.id} 
-              to="/characters" 
-              state={{ character }}
-            >
-              <div id="characterDiv">
-              {character.character}
-              <img src={character.image}  alt=""/>
-              </div>
-            </Link>
-          </div> 
+          <Character key={character.id} character={ character } />
         )}
       </div>
     </>

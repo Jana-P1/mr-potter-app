@@ -3,18 +3,15 @@ const Character = ({ character }) => {
   
   return ( 
     <>
-    <Link
-      to={"/characters" + character._id}
-      state={{ character }}
-      className='character-link'
-    >
-    <div>
-      <img src={character.image} alt=""
-      className="character-image"
-      />
-      <p>{character.character}</p>
-    </div>
-    </Link>
+      <Link 
+        to={'/characters/' + character.id} 
+        state={{ character }}>
+          <div>
+            <p>{character.character}</p>
+            <img src={character.image} alt=''/>
+
+          </div>
+        </Link>
     
     </>
    );
